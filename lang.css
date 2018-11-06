@@ -12,9 +12,17 @@
 .box4{
     float: left;
     width: 20%;
+    padding: 5 5 5 5;
 }
 
 /* メニュー縦並び */
+
+.menu{
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
 
 .menu ul{
     margin: 0;
@@ -28,7 +36,7 @@
     color: black;
     font-size: 18px;
     text-decoration: none;
-    border-top: solid 5px #dddddd;
+    border: solid 3px white;
 }
 
 .menu li a:hover {
@@ -38,7 +46,6 @@
 /* title */
 
 .site h1{
-    margin: 5 5 5 10;
     font-size: 35px;
     color:black;
 }
@@ -50,8 +57,9 @@ body {
     background-color: rgb(146, 131, 110);
 }
 
+/* sidemenu */
 .sidemenu{
-    border: solid 6px #dddddd;
+    border: solid 3px white;
 }
 
 .sidemenu h1{
