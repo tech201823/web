@@ -6,7 +6,9 @@
 
 .boxB{
     float: left;
-    width: 80%;
+    width: 77%;
+    margin-left: 5px;
+    padding: 3 3 3 3;
 }
 
 .box4{
@@ -36,7 +38,8 @@
     color: black;
     font-size: 18px;
     text-decoration: none;
-    border: solid 3px white;
+    border: solid 1px black;
+    background-color: white
 }
 
 .menu li a:hover {
@@ -47,7 +50,17 @@
 
 .site h1{
     font-size: 35px;
-    color:black;
+    color:rgb(0, 128, 96);
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+.site{
+    background-color: rgba(5, 0, 10, 0.623);
+    margin: 0 0 0 0;
+    border-bottom: solid 3px white;
 }
 
 /* body */
@@ -59,7 +72,7 @@ body {
 
 /* sidemenu */
 .sidemenu{
-    border: solid 3px white;
+    border: solid 3px gray;
 }
 
 .sidemenu h1{
@@ -73,4 +86,31 @@ body {
     margin-right: 5px;
     color: #27ecec;
     font-size: larger;
+}
+
+/* box1 */
+
+
+/* boxb */
+.boxB{
+    background-color: white;
+    color:black;
+    padding-bottom: 10cm;
+    margin-bottom: 5px;
+    margin-top: 5px
+}
+
+.box2 p{
+    font-size: 1.25em;
+    margin-bottom: 3;
+    margin-left: 3;
+    margin-right: 3;
+    margin-top: 3;
+}
+
+
+
+/* 全体 */
+.body{
+    font-family:  Impact,Charcoal; 
 }
