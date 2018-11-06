@@ -1,0 +1,68 @@
+.boxA:after{
+    content:"";
+    display:block;
+    clear: both;
+}
+
+.boxB{
+    float: left;
+    width: 80%;
+}
+
+.box4{
+    float: left;
+    width: 20%;
+}
+
+/* メニュー縦並び */
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    border-top: solid 5px #dddddd;
+}
+
+.menu li a:hover {
+    background-color: #27ecec;
+}
+
+/* title */
+
+.site h1{
+    margin: 5 5 5 10;
+    font-size: 35px;
+    color:black;
+}
+
+/* body */
+body {
+	margin: 0;
+	padding: 0;
+    background-color: rgb(146, 131, 110);
+}
+
+.sidemenu{
+    border: solid 6px #dddddd;
+}
+
+.sidemenu h1{
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.sidemenu h1 i{
+    margin-right: 5px;
+    color: #27ecec;
+    font-size: larger;
+}
