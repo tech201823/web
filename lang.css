@@ -146,6 +146,14 @@ body {
     margin-right: 20px;
 }
 
+.box7 pre{
+  -webkit-clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
+  clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/bg-red.jpg);
+  padding: 40px 0;
+  font-weight: bold;
+  }
+
 
 .boxB {
     color: #333;
