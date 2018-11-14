@@ -39,35 +39,30 @@
                 <p>
                     CSSはHTMLでデザインの大部分を実現できる要素を取り入れつつ、
                     <br>新たなデザイン機能を備える。
-                    <br>また、以下のような特徴を持つ。 ページを表示するメディアに合わせてスタイルシートを切り替えることで、メディアごとに表示を変化させることができる。 ユーザーエージェント（多くの場合ウェブブラウザ）、ウェブサイト制作者、ユーザがそれぞれ定義したCSSのもたらす効果を重ね合わせる（カスケードする）ことができる。
+                    <br>また、以下のような特徴を持つ。
+                    <br> ページを表示するメディアに合わせてスタイルシートを切り替えることで、メディアごとに表示を変化させることができる。 ユーザーエージェント（多くの場合ウェブブラウザ）、ウェブサイト制作者、ユーザがそれぞれ定義したCSSのもたらす効果を重ね合わせる（カスケードする）ことができる。
 
                 </p>
             </div>
             <!-- 以下直す -->
             <div class="box6">
                 <p>
-                    プログラミング言語とは、計算機に対して動作手順、動作方法、動作内容などを適切に指示するために用いられる、 人工的に構成された言語体系のことです。
-                    <br> 計算機は、機械語と呼ばれる中央処理装置が直接解釈できる命令を実行することによって動作します。しかし、人間にとって、機械語を扱うことは非常に難しく、
-                    <br> そのため、計算機に与える指示を、より人間にとって扱いやすい表現で与えるための手段として、プログラミング言語が用いられています。
+                    スタイルの情報は読み込む内容（作成者スタイルシート）やユーザーエージェントの設定（ユーザースタイルシート）の二ヶ所に記載できる。またユーザーエージェントも独自のスタイル（デフォルトスタイルシート）を持っている。 作成者スタイルシートはマークアップ文書の中に直接記述するか、別文書として読み込ませる形で利用される。CSSの利便性を最大限発揮する為に、別文書として読み込ませる事が推奨されている。
                 </p>
             </div>
 
             <div class="box7">
                 <pre>
                     <code>
-
-                    
-                        &lt;!--HTML hello world コード  --&gt;
-                        &lt;!doctype html&gt;
-                        &lt;html lang=&quot;ja&quot;&gt;
-                        &lt;head&gt;
-                        &lt;meta charset=&quot;UTF-8&quot;&gt;
-                        &lt;title&gt;Webサイトをつくってみよう&lt;/title&gt;
-                        &lt;/head&gt;
-                        &lt;body&gt;
-                        Hello world!
-                        &lt;/body&gt;
-                        css&lcs.html                
+                /**CSS サンプル/
+                .box2 h1:after {
+                    content: &quot;&quot;;
+                    display: block;
+                    height: 4px;
+                    background: -moz-linear-gradient(to right, rgb(230, 90, 90), transparent);
+                    background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+                    background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+                }     
                 </code>
                     </pre>
             </div>
@@ -96,6 +91,11 @@
                         <li>
                             <a class="now">CSS</a>
                         </li>
+
+                        <li>
+                                <a href="jas.html">javascript</a>
+                            </li>
+    
 
                     </ul>
 
