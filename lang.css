@@ -322,3 +322,24 @@ body {
 .menu > li:hover .submenu li:nth-child(odd){
   transform: skewX(-25deg) translateX(-15px);           
 }
+
+/**
+ * スライダーの幅を指定しているだけ
+ */
+ .c-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  max-width: 1000px;
+  padding: 0 15px;
+}
+
+.swiper-slide p{
+  text-align: center;;
+}
+
+.boxsw{
+  background-color:#34495e;
+}
