@@ -1,30 +1,34 @@
-.boxA:after{
-    content:"";
-    display:block;
-    clear: both;
+/* 400行ほどのソースです。
+下流工程コピペコーダーのスパゲッティーコードを意識して書きました 、
+コードはぐちゃぐちゃでぶブラウザさんがなんとかしてくれるはずです。*/
+
+.boxA:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
-.boxB{
-    float: left;
-    width: 77%;
-    margin-left: 5px;
-    padding: 3 3 3 3;
+.boxB {
+  float: left;
+  width: 77%;
+  margin-left: 5px;
+  padding: 3 3 3 3;
 }
 
-.box4{
-    float: left;
-    width: 15%;
-    padding: 5 5 5 5;
-    margin-left: 35px;
+.box4 {
+  float: left;
+  width: 15%;
+  padding: 5 5 5 5;
+  margin-left: 35px;
 }
 
 .site h1:after {
-    content: "";
-    display: block;
-    height: 4px;
-    background: -moz-linear-gradient(to right, yellow, transparent);
-    background: -webkit-linear-gradient(to right, yellow, transparent);
-    background: linear-gradient(to right, yellow, transparent);
+  content: "";
+  display: block;
+  height: 4px;
+  background: -moz-linear-gradient(to right, yellow, transparent);
+  background: -webkit-linear-gradient(to right, yellow, transparent);
+  background: linear-gradient(to right, yellow, transparent);
 }
 
 /* メニュー縦並び */
@@ -57,26 +61,25 @@
 
 /* title */
 
-.site h1{
-    font-size: 35px;
-    color: white;
-    margin-top: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 0px;
-
+.site h1 {
+  font-size: 35px;
+  color: white;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px;
 }
 
-.site{
-    background-color:#333;
-    margin: 5px 5px 5px 5px;
+.site {
+  background-color: #333;
+  margin: 5px 5px 5px 5px;
 }
 
 /* body */
 body {
-	margin: 0;
-    padding: 0;
-    background-color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
 }
 
 /* sidemenu */
@@ -99,92 +102,87 @@ body {
 
 /* box1 */
 
-
 /* boxb */
-.boxB{
-    background-color: white;
-    color:black;
-    padding-bottom: 10cm;
-    margin-bottom: 5px;
-    margin-top: 5px
+.boxB {
+  background-color: white;
+  color: black;
+  padding-bottom: 10cm;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
-.box2 p{
-    font-size: 1.25em;
-    margin-bottom: 3;
-    margin-left: 3;
-    margin-right: 3;
-    margin-top: 3;
+.box2 p {
+  font-size: 1.25em;
+  margin-bottom: 3;
+  margin-left: 3;
+  margin-right: 3;
+  margin-top: 3;
 }
-
-
 
 /* 全体 */
-.body{
-    font-family:  Impact,Charcoal; 
+.body {
+  font-family: Impact, Charcoal;
 }
 
-.box2 h1{
-    position: relative;
-    padding: 0.25em 0;
-    color: aliceblue;
+.box2 h1 {
+  position: relative;
+  padding: 0.25em 0;
+  color: aliceblue;
 }
 
 .box2 h1:after {
-    content: "";
-    display: block;
-    height: 4px;
-    background: -moz-linear-gradient(to right, rgb(230, 90, 90), transparent);
-    background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
-    background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+  content: "";
+  display: block;
+  height: 4px;
+  background: -moz-linear-gradient(to right, rgb(230, 90, 90), transparent);
+  background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+  background: linear-gradient(to right, rgb(230, 90, 90), transparent);
 }
 
 .box2,
 .box3,
 .box5,
-.box6{
-    margin-left: 20px;
-    margin-right: 20px;
+.box6 {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.box7 pre{
+.box7 pre {
   -webkit-clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
   clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/bg-red.jpg);
   padding: 40px 0;
   font-weight: bold;
-  }
-
+}
 
 .boxB {
-    color: #333;
-    font: 18px/1.6 sans-serif;
-    background: #333;
-  }
-  p {
-    width: 70%;
-    margin: 0 auto;
-    padding: 40px 0;
-  }
-  .box3,
-  .box6{
-    color: white;
-  }
-  
-  /* 斜め配置 */
-  .box5 {
-    -webkit-clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
-    clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/bg-red.jpg);
-    padding: 40px 0;
-  }
+  color: #333;
+  font: 18px/1.6 sans-serif;
+  background: #333;
+}
+p {
+  width: 70%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.box3,
+.box6 {
+  color: white;
+}
 
-  .copyright{
-      color: aliceblue;
-  }
+/* 斜め配置 */
+.box5 {
+  -webkit-clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
+  clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/bg-red.jpg);
+  padding: 40px 0;
+}
 
- //add
+.copyright {
+  color: #e74c3c;
+}
 
+/* add */
 /* Clearing floats */
 .cf:before,
 .cf:after {
@@ -211,13 +209,13 @@ body {
 }
 
 /* Main level */
-.menu {         
+.menu {
   margin: 50px auto;
   width: 800px;
   /* http://www.red-team-design.com/horizontal-centering-using-css-fit-content-value */
   width: -moz-fit-content;
   width: -webkit-fit-content;
-  width: fit-content;   
+  width: fit-content;
 }
 
 .menu > li {
@@ -234,11 +232,11 @@ body {
   text-decoration: none;
   font-family: Arial, Helvetica;
   font-size: 14px;
-}       
+}
 
 .menu li:hover {
   background: #e74c3c;
-}       
+}
 
 .menu > li > a {
   transform: skewX(-25deg);
@@ -249,7 +247,8 @@ body {
 .submenu {
   position: absolute;
   width: 200px;
-  left: 50%; margin-left: -100px;
+  left: 50%;
+  margin-left: -100px;
   transform: skewX(-25deg);
   transform-origin: left top;
 }
@@ -257,24 +256,24 @@ body {
 .submenu li {
   background-color: #34495e;
   position: relative;
-  overflow: hidden;     
-}                       
+  overflow: hidden;
+}
 
 .submenu > li > a {
-  padding: 1em 2em;         
+  padding: 1em 2em;
 }
 
 .submenu > li::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -125%;
   height: 100%;
-  width: 100%;          
-  box-shadow: 0 0 50px rgba(0, 0, 0, .9);           
-}       
+  width: 100%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+}
 
 /* Odd stuff */
-.submenu > li:nth-child(odd){
+.submenu > li:nth-child(odd) {
   transform: skewX(-25deg) translateX(0);
 }
 
@@ -285,10 +284,10 @@ body {
 .submenu > li:nth-child(odd)::after {
   right: -50%;
   transform: skewX(-25deg) rotate(3deg);
-}               
+}
 
 /* Even stuff */
-.submenu > li:nth-child(even){
+.submenu > li:nth-child(even) {
   transform: skewX(25deg) translateX(0);
 }
 
@@ -305,32 +304,31 @@ body {
 .submenu,
 .submenu li {
   opacity: 0;
-  visibility: hidden;           
+  visibility: hidden;
 }
 
 .submenu li {
-  transition: .2s ease transform;
+  transition: 0.2s ease transform;
 }
 
 .menu > li:hover .submenu,
 .menu > li:hover .submenu li {
   opacity: 1;
   visibility: visible;
-}       
-
-.menu > li:hover .submenu li:nth-child(even){
-  transform: skewX(25deg) translateX(15px);         
 }
 
-.menu > li:hover .submenu li:nth-child(odd){
-  transform: skewX(-25deg) translateX(-15px);           
+.menu > li:hover .submenu li:nth-child(even) {
+  transform: skewX(25deg) translateX(15px);
 }
 
+.menu > li:hover .submenu li:nth-child(odd) {
+  transform: skewX(-25deg) translateX(-15px);
+}
 
 /**
  * スライダーの幅を指定しているだけ
  */
- .c-container {
+.c-container {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -342,40 +340,37 @@ body {
   height: 500px;
 }
 
-.swiper-slide p{
+.swiper-slide p {
   text-align: center;
 }
 
-.boxsw{
-  background-color:#34495e;
+.boxsw {
+  background-color: #34495e;
+  /*ここは絶対に消すなお前が死ぬぞ */
+  margin-bottom: 85px;
 }
-
-
-
 
 /* top retrun bottan */
 
 #page-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 80%;
+  position: fixed;
+  bottom: 3px;
+  right: 20px;
+  font-size: 80%;
 }
- 
+
 #page-top a {
-    display: block;
-    background:red;
-    color: black;
-    width: 100px;
-    padding: 25px 0;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 10px;
+  display: block;
+  background: #e74c3c;
+  color: white;
+  width: 100px;
+  padding: 25px 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
 }
- 
+
 #page-top a:hover {
-    background: #999;
-    text-decoration: none;
+  background: #999;
+  text-decoration: none;
 }
-
-
