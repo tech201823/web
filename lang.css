@@ -326,6 +326,7 @@ body {
   transform: skewX(-25deg) translateX(-15px);           
 }
 
+
 /**
  * スライダーの幅を指定しているだけ
  */
@@ -337,15 +338,19 @@ body {
   margin-top: auto;
   max-width: 1000px;
   padding: 0 15px;
+  width: 1000px;
+  height: 500px;
 }
 
 .swiper-slide p{
   text-align: center;
-  
 }
 
 .boxsw{
   background-color:#34495e;
 }
+
+
+
 
 /* top retrun bottan */
