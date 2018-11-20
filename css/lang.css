@@ -375,18 +375,36 @@ p {
 
 #page-top a {
   display: block;
-  background: #e74c3c;
-  color: white;
-  width: 100px;
+  background:unset;
+  color:#e74c3c;
+  width: 45px;
+  height:25px;
   padding: 25px 0;
   text-align: center;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-left:730px; 
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 25px;
+  width: 40px;
+  height: 30px;
+  font-family: 'Impact';padding-left: 25px;
+  padding-right: 25px;
+   border: 2px;border-top-style: solid;
+   border-top-width: 3px;
+   border-bottom-style: solid;
+   border-right-width: 3px;
+   border-right-style: solid;
+   border-left-width: 3px;
+   border-left-style: solid;
 }
 
 #page-top a:hover {
-  background: #999;
-  text-decoration: none;
+  background:#e74c3c;
+  text-decoration: black;
+  color:#333;
 }
 
 /* 文字浮き上がる */
