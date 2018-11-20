@@ -1,0 +1,436 @@
+/* 400行ほどのソースです。
+下流工程コピペコーダーのスパゲッティーコードを意識して書きました 、
+コードはぐちゃぐちゃでぶブラウザさんがなんとかしてくれるはずです。*/
+
+.boxA:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.boxB {
+  float: left;
+  width: 77%;
+  margin-left: 5px;
+  padding: 3 3 3 3;
+}
+
+.box4 {
+  float: left;
+  width: 15%;
+  padding: 5 5 5 5;
+  margin-left: 35px;
+}
+
+.site h1:after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: -moz-linear-gradient(to right, yellow, transparent);
+  background: -webkit-linear-gradient(to right, yellow, transparent);
+  background: linear-gradient(to right, yellow, transparent);
+}
+
+/* メニュー縦並び */
+
+/* .menu{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+    background-color:#333;
+}
+
+.menu li a:hover {
+    background-color:#FF5F07;
+} */
+
+/* title */
+
+.site h1 {
+  font-size: 35px;
+  color: white;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+.site {
+  background-color: #333;
+  margin: 5px 5px 5px 5px;
+}
+
+/* body */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+/* sidemenu */
+
+/* .sidemenu{
+   
+}
+
+.sidemenu h1{
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.sidemenu h1 i{
+    margin-right: 5px;
+    color: #FF5F07;
+    font-size: larger;
+} */
+
+/* box1 */
+
+/* boxb */
+
+.boxB {
+  background-color: white;
+  color: black;
+  padding-bottom: 10cm;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.box2 p {
+  font-size: 1.25em;
+  margin-bottom: 3;
+  margin-left: 3;
+  margin-right: 3;
+  margin-top: 3;
+}
+
+/* 全体 */
+
+.body {
+  font-family: Impact, Charcoal;
+}
+
+.box2 h1 {
+  position: relative;
+  padding: 0.25em 0;
+  color: aliceblue;
+}
+
+.box2 h1:after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: -moz-linear-gradient(to right, rgb(230, 90, 90), transparent);
+  background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+  background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+}
+
+.box2,
+.box3,
+.box5,
+.box6 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.box7 pre {
+  -webkit-clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
+  clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/bg-red.jpg);
+  padding: 40px 0;
+  font-weight: bold;
+}
+
+.boxB {
+  color: #333;
+  font: 18px/1.6 sans-serif;
+  background: #333;
+}
+
+p {
+  width: 70%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.box3,
+.box6 {
+  color: white;
+}
+
+/* 斜め配置 */
+
+.box5 {
+  -webkit-clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
+  clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/bg-red.jpg);
+  padding: 40px 0;
+}
+
+/* copyrightの設定 */
+
+.copyright {
+  color: white;
+  font-weight: bold;
+}
+
+/* add */
+
+/* Clearing floats */
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+
+.menu,
+.submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* メニューの固定↓プルダウンの関係上保留 */
+  /* position: fixed; */
+}
+
+/* Main level */
+
+.menu {
+  margin: 50px auto;
+  width: 800px;
+  /* http://www.red-team-design.com/horizontal-centering-using-css-fit-content-value */
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+
+.menu>li {
+  background: #34495e;
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+}
+
+.menu a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+}
+
+.menu li:hover {
+  background: #e74c3c;
+}
+
+.menu>li>a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+
+/* Dropdown */
+
+.submenu {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+
+.submenu li {
+  background-color: #34495e;
+  position: relative;
+  overflow: hidden;
+}
+
+.submenu>li>a {
+  padding: 1em 2em;
+}
+
+.submenu>li::after {
+  content: "";
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+}
+
+/* Odd stuff */
+
+.submenu>li:nth-child(odd) {
+  transform: skewX(-25deg) translateX(0);
+}
+
+.submenu>li:nth-child(odd)>a {
+  transform: skewX(25deg);
+}
+
+.submenu>li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}
+
+/* Even stuff */
+
+.submenu>li:nth-child(even) {
+  transform: skewX(25deg) translateX(0);
+}
+
+.submenu>li:nth-child(even)>a {
+  transform: skewX(-25deg);
+}
+
+.submenu>li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+
+.submenu,
+.submenu li {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.submenu li {
+  transition: 0.2s ease transform;
+}
+
+.menu>li:hover .submenu,
+.menu>li:hover .submenu li {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu>li:hover .submenu li:nth-child(even) {
+  transform: skewX(25deg) translateX(15px);
+}
+
+.menu>li:hover .submenu li:nth-child(odd) {
+  transform: skewX(-25deg) translateX(-15px);
+}
+
+/**
+ * スライダーの幅を指定しているだけ
+ */
+
+.c-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  max-width: 1000px;
+  padding: 0 15px;
+  width: 1000px;
+  height: 500px;
+}
+
+.swiper-slide p {
+  text-align: center;
+}
+
+.boxsw {
+  background-color: #34495e;
+  /*ここは絶対に消すなお前が死ぬぞ */
+  margin-bottom: 85px;
+}
+
+/* top retrun bottan */
+
+#page-top {
+  position: fixed;
+  bottom: 3px;
+  right: 20px;
+  font-size: 80%;
+}
+
+#page-top a {
+  display: block;
+  background: #e74c3c;
+  color: white;
+  width: 100px;
+  padding: 25px 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+#page-top a:hover {
+  background: #999;
+  text-decoration: none;
+}
+
+/* 文字浮き上がる */
+
+.fadeInDown {
+  -webkit-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  visibility: visible !important;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
