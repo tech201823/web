@@ -178,8 +178,10 @@ p {
   padding: 40px 0;
 }
 
+/* copyrightの設定 */
 .copyright {
-  color: #e74c3c;
+  color:white;
+  font-weight: bold;
 }
 
 /* add */
