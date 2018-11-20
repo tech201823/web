@@ -13,7 +13,7 @@ $(function () {
     topBtn.hide();
     //スクロールが500に達したらボタン表示
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 500) {
+        if ($(this).scrollTop() > 870) {
             topBtn.fadeIn();
         } else {
             topBtn.fadeOut();
@@ -23,7 +23,7 @@ $(function () {
     topBtn.click(function () {
         $('body,html').animate({
             scrollTop: 0
-        }, 500);
+        }, 700);
         return false;
     });
 });
@@ -44,8 +44,14 @@ $(window).scroll(function () {
 // para
 var particles = Particles.init({
     selector: '.background',
-  sizeVariations: 10,
-  color: ['#00bbdd', '#404B69', '#DBEDF3'],
-  connectParticles: true
+    sizeVariations: 10,
+    color: ['#00bbdd', '#404B69', '#DBEDF3'],
+    connectParticles: true
 });
 
+// textillate
+$(function () {
+    $('.tlt').textillate();
+})
+
+$('.tlt').textillate({ in: { effect: 'rollIn' } });

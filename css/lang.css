@@ -6,23 +6,30 @@
   content: "";
   display: block;
   clear: both;
+  height: auto;
+}
+
+.boxB{
+  height: auto;
 }
 
 .boxB {
   float: left;
   width: 77%;
   margin-left: 5px;
-  padding: 3 3 3 3;
+  
+  padding-bottom: 3cm;
 }
 
 .box4 {
   float: left;
   width: 15%;
   padding: 5 5 5 5;
-  margin-left: 35px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #333;
-  width: 200px;
-height: 300px;
+  width: 280px;
+height: 500px;
 }
 
 .site h1:after {
@@ -81,6 +88,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #333;
+  height: 100%;
 }
 
 /* sidemenu */
@@ -107,7 +115,7 @@ body {
 .boxB {
   background-color: white;
   color: black;
-  padding-bottom: 10cm;
+  padding-bottom: auto;
   margin-bottom: 5px;
   margin-top: 5px;
 }
@@ -188,6 +196,7 @@ p {
 .copyright {
   color: white;
   font-weight: bold;
+  height: auto;
 }
 
 /* add */
@@ -361,6 +370,10 @@ p {
   text-align: center;
 }
 
+.swiper-slide img{
+  border-radius: 20px;
+}
+
 .boxsw {
   background-color: #333;
   /*ここは絶対に消すなお前が死ぬぞ */
@@ -495,6 +508,7 @@ font-family: impact;
     border-radius: 20px;
     border: 3px;
     border: #e74c3c;   
+    position: 150px;
 }
 .box h1{
   border-top-style: solid;
@@ -517,3 +531,5 @@ a {
   color:white;
 }
 
+/* type writer */
+	
