@@ -39,13 +39,11 @@
     margin-bottom: 5px;
     margin-left: 10px;
 }
-
 .menu ul{
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
 .menu li a{
     display: block;
     padding: 10px;
@@ -54,7 +52,6 @@
     text-decoration: none;
     background-color:#333;
 }
-
 .menu li a:hover {
     background-color:#FF5F07;
 } */
@@ -71,7 +68,7 @@
 }
 
 .site {
-  background-color: #333;
+  background-color:#333;
   margin: 5px 5px 5px 5px;
 }
 
@@ -88,14 +85,12 @@ body {
 /* .sidemenu{
    
 }
-
 .sidemenu h1{
     margin: 0;
     padding: 10px;
     font-size: 16px;
     font-weight: normal;
 }
-
 .sidemenu h1 i{
     margin-right: 5px;
     color: #FF5F07;
@@ -364,7 +359,7 @@ p {
 }
 
 .boxsw {
-  background-color: #34495e;
+  background-color: #333;
   /*ここは絶対に消すなお前が死ぬぞ */
   margin-bottom: 85px;
 }
@@ -432,5 +427,43 @@ p {
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
+}
+
+/* partなんちゃら */
+
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Default Styling */
+body {
+  font-family: 'Merienda', cursive;
+  background: #333;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  background: #333;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  color: white;
+}
+
+
+a {
+  color:white;
 }
 
