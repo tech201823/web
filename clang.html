@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>プログラミング言語紹介</title>
+    <link href="css/lang.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>プログラミング言語紹介</title>
-  <link href="css/lang.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" />
+  <body>
+    <div class="site"><h1>プログラミング言語紹介</h1></div>
 
-</head>
+    <div class="box1">
+      <header>
+        <img src="img/header.jpg" alt="header" width="1259px" height="204x" />
+      </header>
+    </div>
 
-<body>
-  <div class="site">
-    <h1>プログラミング言語紹介</h1>
-  </div>
+    <div class="boxA" id="animation">
+      <div class="boxB">
+        <div class="box2"><h1>C言語</h1></div>
 
-  <div class="box1">
-    <header>
-      <img src="img/header.jpg" alt="header" width="1259px" height="204x" />
-    </header>
-  </div>
+        <div class="box3">
+          <p>
+            C言語は、AT&Tベル研究所のケン・トンプソンが開発したB言語の改良として誕生した。
+            1972年、トンプソンとUNIXの開発を行っていたデニス・リッチーはB言語を改良し、実行可能な機械語を直接生成するC言語のコンパイラを開発した。後に、UNIXは大部分をC言語によって書き換えられ、C言語のコンパイラ自体も移植性の高い実装のPortable
+            C
+            Compilerに置き換わったこともあり、UNIX上のプログラムはその後にC言語を広く利用するようになった。
+          </p>
+        </div>
 
-  <div class="boxA" id="animation">
-    <div class="boxB">
-      <div class="box2">
-        <h1>C言語</h1>
-      </div>
+        <div class="box5">
+          <p>
+            ちなみに、「UNIXを開発するためにC言語が作り出された」と言われることがあるが、
+            <a href="https://www.bell-labs.com/usr/dmr/www/chist.html"
+              >「The Development of the C Language」</a
+            >によると、これは正しくなく、経緯は以下の通りである。 <br />
+            C言語は、当初はあくまでもOS上で動くユーティリティを作成する目的で作り出されたものであり、OSのカーネルを記述するために使われるようになるのは後の展開である。
+          </p>
+        </div>
 
-      <div class="box3">
-        <p>
-          C言語は、AT&Tベル研究所のケン・トンプソンが開発したB言語の改良として誕生した。 1972年、トンプソンとUNIXの開発を行っていたデニス・リッチーはB言語を改良し、実行可能な機械語を直接生成するC言語のコンパイラを開発した。後に、UNIXは大部分をC言語によって書き換えられ、C言語のコンパイラ自体も移植性の高い実装のPortable
-          C Compilerに置き換わったこともあり、UNIX上のプログラムはその後にC言語を広く利用するようになった。
-        </p>
-      </div>
+        <div class="box6">
+          <p>
+            UNIXの開発当初、Multicsプロジェクトが目指していた高級言語によるOSの開発という目標は見送られた。
+            アセンブリ言語でUNIXが作成されると、OS上で動くユーティリティを作成するためのプログラミング言語が必要とされた。
+            ケン・トンプソンは、当初Fortranコンパイラを作ろうとしたが、途中で放棄し、新しい言語であるB言語を作成した。
+            B言語はインタプリタ言語であったため動作が遅く、B言語でユーティリティを作ることはあまりなかった。(開発者達は、コンパイラなどのユーティリティを「システムプログラム」と呼んでいたが、それらの作成に使われる「システムプログラミング言語」は、OSのカーネルを作成するための言語という意味ではない[6]。）
+            B言語の欠点を解消するため、1971年に改良作業を開始した。
+            1972年にC言語のコンパイラができあがり、UNIXバージョン2において、いくつかのユーティリティを作成するために使用された。
+          </p>
+        </div>
 
-      <div class="box5">
-        <p>
-          ちなみに、「UNIXを開発するためにC言語が作り出された」と言われることがあるが、
-          <a href="https://www.bell-labs.com/usr/dmr/www/chist.html">「The Development of the C Language」</a>によると、これは正しくなく、経緯は以下の通りである。
-          <br /> C言語は、当初はあくまでもOS上で動くユーティリティを作成する目的で作り出されたものであり、OSのカーネルを記述するために使われるようになるのは後の展開である。
-        </p>
-      </div>
-
-      <div class="box6">
-        <p>
-          UNIXの開発当初、Multicsプロジェクトが目指していた高級言語によるOSの開発という目標は見送られた。 アセンブリ言語でUNIXが作成されると、OS上で動くユーティリティを作成するためのプログラミング言語が必要とされた。 ケン・トンプソンは、当初Fortranコンパイラを作ろうとしたが、途中で放棄し、新しい言語であるB言語を作成した。
-          B言語はインタプリタ言語であったため動作が遅く、B言語でユーティリティを作ることはあまりなかった。(開発者達は、コンパイラなどのユーティリティを「システムプログラム」と呼んでいたが、それらの作成に使われる「システムプログラミング言語」は、OSのカーネルを作成するための言語という意味ではない[6]。）
-          B言語の欠点を解消するため、1971年に改良作業を開始した。 1972年にC言語のコンパイラができあがり、UNIXバージョン2において、いくつかのユーティリティを作成するために使用された。
-        </p>
-      </div>
-
-      <div class="box7">
-        <pre>
+        <div class="box7">
+          <pre>
                     <code>
                         /*c言語　hello world ソース*/
                         #include &lt;stdio.h&gt;
@@ -62,63 +66,46 @@
                         }              
                 </code>
                     </pre>
+        </div>
+      </div>
+
+      <div class="box4">
+        <ul class="menu cf">
+          <li>
+            <a href="">Menu Item</a>
+            <!-- menu 訂正済み -->
+            <ul class="submenu">
+              <li><a href="index.html">TOP</a></li>
+              <li><a class="now">c言語</a></li>
+              <li><a href="ht.html">html</a></li>
+              <li><a href="cs.html">CSS</a></li>
+
+              <li><a href="jas.html">javascript</a></li>
+
+              <li><a href="jav.html">JAVA</a></li>
+
+              <li><a href="rub.html">Ruby</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
 
-    <div class="box4">
-      <ul class="menu cf">
-        <li>
-          <a href="">Menu Item</a>
-          <!-- menu 訂正済み -->
-          <ul class="submenu">
-            <li>
-              <a href="index.html">TOP</a>
-            </li>
-            <li>
-              <a class="now">c言語</a>
-            </li>
-            <li>
-              <a href="ht.html">html</a>
-            </li>
-            <li>
-              <a href="cs.html">CSS</a>
-            </li>
+    <footer>
+      <div class="copyright">
+        <p>copyright &copy; プログラミング言語紹介</p>
+      </div>
 
-            <li>
-              <a href="jas.html">javascript</a>
-            </li>
+      <!-- top ボタン -->
+      <div class="topbt">
+        <p id="page-top">
+          <a href="#" style="margin-left:730px; ">PAGE TOP</a>
+        </p>
+      </div>
+    </footer>
 
-            <li>
-              <a href="jav.html">JAVA</a>
-            </li>
-
-            <li>
-              <a href="rub.html">Ruby</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <footer>
-    <div class="copyright">
-      <p>copyright &copy; プログラミング言語紹介</p>
-    </div>
-
-    <!-- top ボタン -->
-    <div class="topbt">
-      <p id="page-top">
-        <a href="#" style="margin-left:730px; ">PAGE TOP</a>
-      </p>
-    </div>
-
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
-  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
