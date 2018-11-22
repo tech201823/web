@@ -2,15 +2,17 @@
 // swiper auto play
 var swiper = new Swiper('.swiper-container', {
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
     loop: true,
-    autoplay: {
-      delay:4000,
-      disableOnInteraction: false,
-    },
-  });
+    autoplay: 4000,
+    delay: 4000,
+    disableOnInteraction: true,
+    effect: 'fade',
+    pagination: '.swiper-pagination',
+
+});
 // top ボタン
 
 $(function () {
@@ -73,19 +75,19 @@ $('.tlt1').textillate({
     // visibility: hidden to the element before running this plugin)
     initialDelay: 0,
 
-     // set whether or not to automatically start animating
-     autoStart: true,
+    // set whether or not to automatically start animating
+    autoStart: true,
 
-      // アニメーションの間隔時間
-      minDisplayTime: 3000,
+    // アニメーションの間隔時間
+    minDisplayTime: 3000,
 
 
 
     // in animation settings
     in: {
-       
+
         // set the effect name
-        effect: 'fadeInDownBig',  
+        effect: 'fadeInDownBig',
 
         // set the delay factor applied to each consecutive character
         delayScale: 1.5,
@@ -145,8 +147,8 @@ $('.tlt2').textillate({
     // set whether or not to automatically start animating
     autoStart: true,
 
-      // アニメーションの間隔時間
-      minDisplayTime: 2000,
+    // アニメーションの間隔時間
+    minDisplayTime: 2000,
 
 
 
@@ -193,4 +195,6 @@ $('.tlt2').textillate({
     // set the type of token to animate (available types: 'char' and 'word')
     type: 'char'
 });
+
+
 

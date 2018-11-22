@@ -380,6 +380,7 @@ p {
   margin-bottom: 85px;
 }
 
+
 /* top retrun bottan */
 
 #page-top {
@@ -387,37 +388,55 @@ p {
   bottom: 3px;
   right: 20px;
   font-size: 80%;
-}
-
-#page-top a {
-  display: block;
-  background:unset;
-  color:#e74c3c;
-  width: 45px;
-  height:25px;
-  padding: 25px 0;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 20px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin-left:730px; 
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-size: 25px;
-  width: 40px;
-  height: 30px;
-  font-family: 'Impact';padding-left: 25px;
-  padding-right: 25px;
-   border: 2px;border-top-style: solid;
+    border: 2px;border-top-style: solid;
    border-top-width: 3px;
    border-bottom-style: solid;
    border-right-width: 3px;
    border-right-style: solid;
    border-left-width: 3px;
    border-left-style: solid;
+   border-radius: 20px;
+   right: 40px !important;
+   bottom: 20px !important;
+   width: 100px;
+  height:25px;
+  border-color: #e74c3c
 }
 
-#page-top a:hover {
+#page-top a {
+  display: block;
+  background:unset;
+  color:#e74c3c;
+  text-align: center;
+  text-decoration: none;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  
+  font-size: 25px;
+  font-family: 'Impact';
+    border: 3px;
+    border-top-style: solid;
+   border-top-width: 5px;
+   border-bottom-style: solid;
+   border-right-width: 5px;
+   border-right-style: solid;
+   border-left-width: 5px;
+   border-left-style: solid;
+      border-radius: 20px;
+      border-bottom-width: 5px;
+   right: 40px !important;
+   bottom: 20px !important;
+   width: 100px;
+  height:100px;
+ position: fixed;
+  bottom: 3px;
+  right: 20px;
+
+  /* ここから文字を中央に寄せる */
+  
+ 
+}
+
+#page-top :hover {
   background:#e74c3c;
   text-decoration: black;
   color:#333;
