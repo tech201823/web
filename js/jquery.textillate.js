@@ -256,6 +256,8 @@
     })
   };
 
+  // default設定
+
   $.fn.textillate.defaults = {
     selector: '.texts',
     loop: false,
@@ -271,7 +273,7 @@
       callback: function () { }
     },
     out: {
-      effect: 'hinge',
+      effect: 'fadeOutLeftBig',
       delayScale: 1.5,
       delay: 50,
       sync: false,
@@ -279,11 +281,6 @@
       shuffle: false,
       callback: function () { }
     },
-    autoStart: true,
-    inEffects: [],
-    outEffects: ['hinge'],
-    callback: function () { },
-    type: 'char'
   };
 
 }(jQuery));
