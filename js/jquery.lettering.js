@@ -10,12 +10,12 @@
  *
  * Date: Mon Sep 20 17:14:00 2010 -0600
  */
-(function($) {
+(function ($) {
   function injector(t, splitter, klass, after) {
     var a = t.text().split(splitter),
       inject = "";
     if (a.length) {
-      $(a).each(function(i, item) {
+      $(a).each(function (i, item) {
         inject +=
           '<span class="' + klass + (i + 1) + '">' + item + "</span>" + after;
       });
@@ -24,20 +24,20 @@
   }
 
   var methods = {
-    init: function() {
-      return this.each(function() {
+    init: function () {
+      return this.each(function () {
         injector($(this), "", "char", "");
       });
     },
 
-    words: function() {
-      return this.each(function() {
+    words: function () {
+      return this.each(function () {
         injector($(this), " ", "word", " ");
       });
     },
 
-    lines: function() {
-      return this.each(function() {
+    lines: function () {
+      return this.each(function () {
         var r = "eefec303079ad17405c889e092e105b0";
         // Because it's hard to split a <br/> tag consistently across browsers,
         // (*ahem* IE *ahem*), we replaces all <br/> instances with an md5 hash
@@ -56,7 +56,7 @@
     }
   };
 
-  $.fn.lettering = function(method) {
+  $.fn.lettering = function (method) {
     // Method calling logic
     if (method && methods[method]) {
       return methods[method].apply(this, [].slice.call(arguments, 1));

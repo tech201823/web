@@ -13,11 +13,11 @@ var swiper = new Swiper(".swiper-container", {
 });
 // top ボタン
 
-$(function() {
+$(function () {
   var topBtn = $("#page-top");
   topBtn.hide();
   //スクロールが500に達したらボタン表示
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 870) {
       topBtn.fadeIn();
     } else {
@@ -25,7 +25,7 @@ $(function() {
     }
   });
   //スルスルっとスクロールでトップへもどる
-  topBtn.click(function() {
+  topBtn.click(function () {
     $("body,html").animate(
       {
         scrollTop: 0
@@ -38,10 +38,10 @@ $(function() {
 
 // 文字浮き上がる
 $("#animation").css("visibility", "hidden");
-$(window).scroll(function() {
+$(window).scroll(function () {
   var windowHeight = $(window).height(),
     topWindow = $(window).scrollTop();
-  $("#animation").each(function() {
+  $("#animation").each(function () {
     var targetPosition = $(this).offset().top;
     if (topWindow > targetPosition - windowHeight + 100) {
       $(this).addClass("fadeInDown");
@@ -104,7 +104,7 @@ $(".tlt1").textillate({
     reverse: true,
 
     // callback that executes once the animation has finished
-    callback: function() {}
+    callback: function () { }
   },
 
   // out animation settings.
@@ -115,11 +115,11 @@ $(".tlt1").textillate({
     sync: false,
     shuffle: true,
     reverse: true,
-    callback: function() {}
+    callback: function () { }
   },
 
   // callback that executes once textillate has finished
-  callback: function() {},
+  callback: function () { },
 
   // set the type of token to animate (available types: 'char' and 'word')
   type: "char"
@@ -169,7 +169,7 @@ $(".tlt2").textillate({
     reverse: true,
 
     // callback that executes once the animation has finished
-    callback: function() {}
+    callback: function () { }
   },
 
   // out animation settings.
@@ -180,11 +180,11 @@ $(".tlt2").textillate({
     sync: false,
     shuffle: true,
     reverse: false,
-    callback: function() {}
+    callback: function () { }
   },
 
   // callback that executes once textillate has finished
-  callback: function() {},
+  callback: function () { },
 
   // set the type of token to animate (available types: 'char' and 'word')
   type: "char"

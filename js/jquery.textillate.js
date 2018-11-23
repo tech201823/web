@@ -6,7 +6,7 @@
  * Copyright (C) 2012-2013 Jordan Schroter
  */
 
-(function($) {
+(function ($) {
   "use strict";
 
   function isInEffect(effect) {
@@ -35,7 +35,7 @@
 
     if (!attrs.length) return data;
 
-    $.each(attrs, function(i, attr) {
+    $.each(attrs, function (i, attr) {
       var nodeName = attr.nodeName.replace(/delayscale/, "delayScale");
       if (/^data-in-*/.test(nodeName)) {
         data.in = data.in || {};
@@ -71,7 +71,7 @@
 
     $t.one(
       "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
-      function() {
+      function () {
         $t.removeClass("animated " + effect);
         cb && cb();
       }
@@ -90,7 +90,7 @@
     if (options.shuffle) $tokens = shuffle($tokens);
     if (options.reverse) $tokens = $tokens.toArray().reverse();
 
-    $.each($tokens, function(i, t) {
+    $.each($tokens, function (i, t) {
       var $token = $(t);
 
       function complete() {
@@ -108,18 +108,18 @@
         : options.delay * i * options.delayScale;
 
       $token.text()
-        ? setTimeout(function() {
-            animate($token, options.effect, complete);
-          }, delay)
+        ? setTimeout(function () {
+          animate($token, options.effect, complete);
+        }, delay)
         : complete();
     });
   }
 
-  var Textillate = function(element, options) {
+  var Textillate = function (element, options) {
     var base = this,
       $element = $(element);
 
-    base.init = function() {
+    base.init = function () {
       base.$texts = $element.find(options.selector);
 
       if (!base.$texts.length) {
@@ -145,22 +145,22 @@
 
       base.timeoutRun = null;
 
-      setTimeout(function() {
+      setTimeout(function () {
         base.options.autoStart && base.start();
       }, base.options.initialDelay);
     };
 
-    base.setOptions = function(options) {
+    base.setOptions = function (options) {
       base.options = options;
     };
 
-    base.triggerEvent = function(name) {
+    base.triggerEvent = function (name) {
       var e = $.Event(name + ".tlt");
       $element.trigger(e, base);
       return e;
     };
 
-    base.in = function(index, cb) {
+    base.in = function (index, cb) {
       index = index || 0;
 
       var $elem = base.$texts.find(":nth-child(" + ((index || 0) + 1) + ")"),
@@ -191,7 +191,7 @@
             "-o-transform": "translate3d(0,0,0)",
             transform: "translate3d(0,0,0)"
           })
-          .each(function() {
+          .each(function () {
             $(this).lettering();
           });
       }
@@ -208,17 +208,17 @@
 
       base.currentIndex = index;
 
-      animateTokens($tokens, options.in, function() {
+      animateTokens($tokens, options.in, function () {
         base.triggerEvent("inAnimationEnd");
         if (options.in.callback) options.in.callback();
         if (cb) cb(base);
       });
     };
 
-    base.out = function(cb) {
+    base.out = function (cb) {
       var $elem = base.$texts.find(
-          ":nth-child(" + ((base.currentIndex || 0) + 1) + ")"
-        ),
+        ":nth-child(" + ((base.currentIndex || 0) + 1) + ")"
+      ),
         $tokens = base.$current.find('[class^="' + base.options.type + '"]'),
         options = $.extend(
           true,
@@ -229,7 +229,7 @@
 
       base.triggerEvent("outAnimationBegin");
 
-      animateTokens($tokens, options.out, function() {
+      animateTokens($tokens, options.out, function () {
         $elem.removeClass("current");
         base.triggerEvent("outAnimationEnd");
         $element.removeAttr("data-active");
@@ -238,12 +238,12 @@
       });
     };
 
-    base.start = function(index) {
-      setTimeout(function() {
+    base.start = function (index) {
+      setTimeout(function () {
         base.triggerEvent("start");
 
         (function run(index) {
-          base.in(index, function() {
+          base.in(index, function () {
             var length = base.$texts.children().length;
 
             index += 1;
@@ -254,8 +254,8 @@
             } else {
               index = index % length;
 
-              base.timeoutRun = setTimeout(function() {
-                base.out(function() {
+              base.timeoutRun = setTimeout(function () {
+                base.out(function () {
                   run(index);
                 });
               }, base.options.minDisplayTime);
@@ -265,7 +265,7 @@
       }, base.options.initialDelay);
     };
 
-    base.stop = function() {
+    base.stop = function () {
       if (base.timeoutRun) {
         clearInterval(base.timeoutRun);
         base.timeoutRun = null;
@@ -275,8 +275,8 @@
     base.init();
   };
 
-  $.fn.textillate = function(settings, args) {
-    return this.each(function() {
+  $.fn.textillate = function (settings, args) {
+    return this.each(function () {
       var $this = $(this),
         data = $this.data("textillate"),
         options = $.extend(
@@ -311,7 +311,7 @@
       sync: false,
       reverse: false,
       shuffle: false,
-      callback: function() {}
+      callback: function () { }
     },
     out: {
       effect: "fadeOutLeftBig",
@@ -320,7 +320,7 @@
       sync: false,
       reverse: false,
       shuffle: false,
-      callback: function() {}
+      callback: function () { }
     }
   };
 })(jQuery);

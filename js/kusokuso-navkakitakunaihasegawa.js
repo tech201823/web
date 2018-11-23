@@ -14,10 +14,13 @@ function navkakitakunaihase() {
     var array2 = [];
     // arrayに対応するメニューの名前
     // ～.html のページ名みたいな
-    var array2 = ['TOP', 'ｃ言語', 'css', 'html', 'javascript', 'java', 'ruby'];
+    var array2 = ['TOP', 'ｃ言語', 'css', 'html', 'javascript', 'java', 'Ruby'];
     // ここからループ分岐
     // for のまんなかは配列要素数
-    for (i = 0; i < 7; i++) {
+    if (array.length !== array2.length) {
+        document.write("<p>null</p>")
+    }
+    for (i = 0; i < array.length; i++) {
         if (filename == array[i]) {
             document.write("<li><a class=now>" + array2[i] + "</a></li >");
         } else {
