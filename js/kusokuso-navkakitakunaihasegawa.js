@@ -1,4 +1,5 @@
-
+// copyright©kusokuso-navkakitakunaihasegawa.js 
+// made by hasegawa
 function navkakitakunaihase() {
     // ファイル名取得処理
     var filename =
