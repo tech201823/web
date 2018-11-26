@@ -264,10 +264,11 @@ p {
 .menu a {
     display: block;
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-decoration: none;
     font-family: Arial, Helvetica;
     font-size: 14px;
+    width: 100px;
 }
 
 .menu li:hover {
@@ -277,6 +278,7 @@ p {
 .menu>li>a {
     transform: skewX(-25deg);
     padding: 1em 2em;
+    text-align: center;
 }
 
 
